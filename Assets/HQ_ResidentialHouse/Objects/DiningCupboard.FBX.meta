@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 0db97bc8a3f5fb244af2a6e54d48229e
+timeCreated: 1464768699
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: DiningCupboard
+    100004: DoorDown_L
+    100006: DoorDown_R
+    100008: DoorsDown
+    100010: DoorsUp
+    100012: DoorUp_L
+    100014: DoorUp_R
+    100016: Glass_L
+    100018: Glass_R
+    100020: DoorsDown_mesh
+    100022: DoorsUp_mesh
+    400000: //RootNode
+    400002: DiningCupboard
+    400004: DoorDown_L
+    400006: DoorDown_R
+    400008: DoorsDown
+    400010: DoorsUp
+    400012: DoorUp_L
+    400014: DoorUp_R
+    400016: Glass_L
+    400018: Glass_R
+    400020: DoorsDown_mesh
+    400022: DoorsUp_mesh
+    2300000: DiningCupboard
+    2300002: Glass_L
+    2300004: Glass_R
+    2300006: DoorsDown_mesh
+    2300008: DoorsUp_mesh
+    3300000: DiningCupboard
+    3300002: Glass_L
+    3300004: Glass_R
+    3300006: DoorsDown_mesh
+    3300008: DoorsUp_mesh
+    4300000: DiningCupboard
+    4300002: Glass_R
+    4300004: Glass_L
+    4300006: DoorsDown
+    4300008: DoorsUp
+    4300010: DoorsDown_mesh
+    4300012: DoorsUp_mesh
+    6400000: DiningCupboard
+    6400002: Glass_L
+    6400004: Glass_R
+    6400006: DoorsDown_mesh
+    6400008: DoorsUp_mesh
+    7400000: DiningCupboard_open
+    7400002: DiningCupboard_open //// DiningCupboard
+    9500000: //RootNode
+    11100000: //RootNode
+    11100002: DiningCupboard
+    11100004: DoorDown_L
+    11100006: DoorDown_R
+    11100008: DoorsDown
+    11100010: DoorsDown_mesh
+    11100012: DoorsUp
+    11100014: DoorsUp_mesh
+    11100016: DoorUp_L
+    11100018: DoorUp_R
+    11100020: Glass_L
+    11100022: Glass_R
+    13700000: DoorsDown
+    13700002: DoorsUp
+    13700004: DoorsDown_mesh
+    13700006: DoorsUp_mesh
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: DiningCupboard_open
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 103
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DiningCupboard
+        weight: 1
+      - path: DiningCupboard/DoorDown_L
+        weight: 1
+      - path: DiningCupboard/DoorDown_R
+        weight: 1
+      - path: DiningCupboard/DoorUp_L
+        weight: 1
+      - path: DiningCupboard/DoorUp_L/Glass_L
+        weight: 1
+      - path: DiningCupboard/DoorUp_R
+        weight: 1
+      - path: DiningCupboard/DoorUp_R/Glass_R
+        weight: 1
+      - path: DoorsDown
+        weight: 1
+      - path: DoorsUp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

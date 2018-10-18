@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f8bfbfee82708c74bb9594f607aaf34f
+labels:
+- Realtime
+- Reflection
+timeCreated: 1520650964
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - v_staticTexture: {instanceID: 0}
+  - depthShader: {fileID: 4800000, guid: 594c338f08260a544a8dcdaf7a375205, type: 3}
+  - v_oldRend: {instanceID: 0}
+  - v_oldDepth: {instanceID: 0}
+  - v_defaultMesh: {fileID: 4300002, guid: 31025769a6af7da428a206ea37e52741, type: 3}
+  - v_defaultMat: {fileID: 2100000, guid: 453e0e03852481d4b83ae0e3b4e5f929, type: 2}
+  - v_matInstance: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 9f270ff770a975041b59acc502fa008b
+timeCreated: 1465494936
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: DeskGlass
+    100004: Drawer
+    100006: Drawer_L
+    100008: Drawer_L_mesh
+    100010: Handle
+    100012: Drawer 1
+    100014: Drawer_R
+    100016: Drawer_R_mesh
+    100018: Handle 1
+    100020: Desk
+    100022: Drawer_L_mesh001
+    400000: //RootNode
+    400002: DeskGlass
+    400004: Drawer
+    400006: Drawer_L
+    400008: Drawer_L_mesh
+    400010: Handle
+    400012: Drawer 1
+    400014: Drawer_R
+    400016: Drawer_R_mesh
+    400018: Handle 1
+    400020: Desk
+    400022: Drawer_L_mesh001
+    2300000: //RootNode
+    2300002: DeskGlass
+    2300004: Drawer_L_mesh
+    2300006: Drawer_R_mesh
+    2300008: Desk
+    2300010: Drawer_L_mesh001
+    3300000: //RootNode
+    3300002: DeskGlass
+    3300004: Drawer_L_mesh
+    3300006: Drawer_R_mesh
+    3300008: Desk
+    3300010: Drawer_L_mesh001
+    4300000: Desk
+    4300002: DeskGlass
+    4300004: Drawer_L_mesh
+    4300006: Drawer_R_mesh
+    4300008: Drawer_L_mesh001
+    6400000: //RootNode
+    6400002: DeskGlass
+    6400004: Drawer_L_mesh
+    6400006: Drawer_R_mesh
+    6400008: Desk
+    6400010: Drawer_L_mesh001
+    7400000: Drawer_open
+    7400002: Drawer_open //// Desk
+    9500000: //RootNode
+    11100000: //RootNode
+    11100002: DeskGlass
+    11100004: Drawer
+    11100006: Drawer_L
+    11100008: Drawer_L_mesh
+    11100010: Handle
+    11100012: Drawer 1
+    11100014: Drawer_R
+    11100016: Drawer_R_mesh
+    11100018: Handle 1
+    13700000: Drawer_L_mesh
+    13700002: Drawer_L
+    13700004: Drawer_R_mesh
+    13700006: Drawer_L_mesh001
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Drawer_open
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DeskGlass
+        weight: 1
+      - path: Drawer_L
+        weight: 1
+      - path: Drawer_L/Drawer
+        weight: 1
+      - path: Drawer_L/Drawer/Handle
+        weight: 1
+      - path: Drawer_L_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

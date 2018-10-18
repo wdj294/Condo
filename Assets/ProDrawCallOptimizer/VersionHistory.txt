@@ -1,0 +1,160 @@
+Version 4.3.5
+- Removed button for combine meshes only that was introduced by mistake in
+previous version
+- Performance improvements in version 5.6+
+- Removed obsolete code from lower versions of 5.6
+- Small refactoring across the whole project.
+- Raised minimum supported version to Unity 5.6
+Version 4.3
+- Added a new option in the settings menu for only generating clean objects
+instead of instantiating your original ones.
+- Minor UI fixes
+- Added option for just combining your meshes; no atlassing
+Version 4.2
+- Code cleanup, removing warnings and updating code to be compatible with new
+changes on Unity 5.5.x
+- Fixed critical bug that changed original textures to 1x1 internally due to a bug in
+the Unity API on TextureImporter when setting textures to be readable.
+- Minor bug fixing and small improvements
+Version 4.1
+- Several bug fixing
+- Small performance improvements
+Version 4
+- Multiple atlases supported now!, if your texture atlases are too big the tool will split them automatically for you.
+- Performance improvements when generating atlases with combined objects.
+- Fixed bug that caused an error when generating hierarchies on combined objects.
+- Fixed problem where multiple material objects without materials made the
+app crash
+- Full code revamp and refactoring.
+Version 3.8.1
+- Generating hiearchy now uses optimized objects instead of generated
+objects. (Basically your generated hierarchies are exactly the same to the
+original ones with the optimized objects)
+Version 3.8
+- Small fix on shader labels where they where not displayed completely
+- Added option for generating a hierarchy that mimics the way you have
+assembled your objects apart for your generated objects
+Version 3.7
+- Revamp on UI, added new tab for searching / filtering game objects.
+- Added "Object Search" tab.
+- Moved Search by tag / layer from the "Advanced" tab to the "Object search" tab.
+- Added multi threaded search for malformed UVs.
+- renamed "Advanced" tab to "Settings" tab.
+- Fixed bug where aprox atlas size wasnt being updated when deleting already added objects
+Version 3.6
+- Performance improvements when atlasing multiple materials. (not generating the same atlas over and over again)
+- Multiple materials now reuse textures!
+Version 3.5
+- Added option on the Advanced menu to be able to select which UV channels are going to be modified when baking
+- Small changes on GUI to display correctly GUI elements depending on window size.
+Version 3.4.1
+- Added more info on how to fix the "Malformed UVs" warning.
+Version 3.4
+- Small performance improvements when reusing textures
+- Enhanced reusing textures, now is more accurate and fixes some corner cases
+that might give errors.
+- All uv channels are now supported.
+Version 3.3.3
+- Fixes correct font coloring when using the pro skin
+Version 3.3.2
+- Fixed small bug that caused problems with lightmapped combined objects
+Version 3.3.1
+- Fixed bug that didnt let you work with reuse textures while not clearing
+atlasses before baking
+Version 3.3
+- Added button field for setting default save folder for generated assets.
+- Combine meshes is now possible when baking your objects for extra draw call reduce! (Use with care with camera culling)
+- Manually collect garbage when creating a new atlas / clearing atlasses
+- Slight UI modifications
+Version 3.2
+- If material has null textures and only uses color, then the generated UV will point to the middle of the material [0.5f, 0.5f] in order to avoid distortions on the combined mesh
+- objects displayed on the objects GUI are now by default all closed, now when a new scene is opened the not optimizable objects will be shown.  (thanks to Mike for pointing this out)
+- Atlas calculation is now cached!  (thanks to Mike for pointing this out)
+- Objects are sorted only when the GUI is changed now! (thanks to Mike for pointing this out)
+Version 3.1.3
+- Fixed small bug created when generating prefabs in windows for good!
+Version 3.1.2
+- Removed small error when opening the tool.
+Version 3.1
+- Added support for skinned mesh renderers!
+- Added sample scene for skinned mesh renderers.
+- fixed small bug that created an error when generating prefabs in windows.
+Version 3.0.1
+- Added small note to README.txt regarding known issues.
+Version 3.0
+- Unity5 Standard shader support!. (Remember Unity5 is still in beta so there might be problems; please if found any let me know!)
+- Added extra step when clearing atlas, now when clearing atlas you have to double click to clear an already baked atlas
+Version 2.4
+- Removed "Custom shaders" tab; now the tool calculates automagically the shader info of your custom shaders!, no more manual setup for custom shaders!.
+- When "Create prefabs" is selected on the advanced tab, a small message in
+the Objects GUI reminds the user the bake process will be slow.
+- Small modifications for performance and support of Standard shader for Unity 5. (Still standard shader is not supported)
+- "Not Optimizable" shaders now show in red, and the rest of recognized shaders are in black.
+- Updated README.txt
+- small bugs fix
+Version 2.3
+- Added OptimizableShader.cs. now workflow is more organized and per shader.
+- Removed internal code on GUI and moved it to OptimizableShader->OptimizeShader().
+- Refactored code to be easier to support Unity 5's data-driven standard shader!. (Still standard shader is not supported)
+- Added "Search Status" instead of "Status:" in the console log for the advanced GUI.
+Version 2.2
+- Changed BuildTarget.iOS to BuildTarget.iPhone as it changed in Unity 4.5.5 in the atlasser
+Version 2.1
+- Atlas is now transparent by default preventing render errors on the edges for transparent materials when the atlas isnt fully used. Fix by Mike from M2H studios
+- Solved bug where multiple materials objects where parented and scaled where not correctly re-scaled and re-parented on the optimized object.
+Version 2.0.1
+- Added LOD Automatic script link in README.txt from Mike from M2H studios
+Version 2.0
+- UI Revamp.
+- Added new "Advanced" tab that contains Advanced search and Advanced options.
+- Selection can now be filtered by tags or by layers
+- Removed Reuse textures, Remove atlassed before bake and Generate prefabs options from Objects and placed it into the Advanced UI.
+- Added a console status on the advanced UI that shows the last action done when doing an advanced search.
+- Small performance improvements when drawing the UI and more cleaner code base.
+- Added descriptions for the advanced options.
+- Updated Examples with new baked scenes.
+Version 1.9.5
+- Small performance improvements
+- cleanup some code on the GUI side
+- separated different GUIs from the main menu class.
+Version 1.9.4
+- Performance improvements when processing for platforms like iPhone Android.
+- Multiple materials objects texture formats are now supported
+- Be able to combine 1 GameObject with multiple materials
+Version 1.9.31
+- invalid characters in generated prefabs are now corrected and saved to a valid folder name
+Version 1.9.3
+- Added known issues section on README.txt
+- added log error saying that multiple materials and a non compatible texture format is not supported yet.
+Version 1.9.2
+- Solved crash when object has more than 1 material, has different shaders and the shaders are not recognized
+Version 1.9.1
+- Solved crash problem when an object with more than 1 material had different shaders.
+Version 1.9
+- Tool now automagically supports any texture format. (it internally converts the texture to RGBA32, process it and then reimports back the texture to its original state)
+- Normal textures are automatically marked as normal maps, if the tool cant figure out it will display a warning message.
+- Atlasses automatically get set their closest import texture size i.e atlas size is: 3072, it gets set to 4096.
+Version 1.8
+- Added checkbox for generating prefabs for baked objects. (Unchecked by default), With this checked it takes _more_ time as it generates the meshes and prefabs for the objects.
+--> For each gameobject a prefab gets generated regardless if its repeated or not.
+- Changed token for optimized objects from =>ODCObj to .ODCObj so prefab generation gets done correctly when saving prefabs to the project.
+- Re built all the examples with the new token (.ODCObj)
+- Organized README to show better the tutorial and the contact info.
+Version 1.7
+- Organized link in README for intro video, now it points correctly.
+- Packed Examples folder into a .unityPackage file in order to avoid loading times on the tool, now you just can double click the .unitypackage and it will import the examples
+- Atlasses bigger than 4096x4096 now displays a warning that resize will be done by Unity when using it.
+Version 1.63
+- Fixed small bug that made the app crash when baking atlas on a non saved scene.
+Version 1.62
+- Fixed compile directives to avoid conflicts when building projects
+version 1.61
+- Added namespaces in order to avoid conflicts with repeated classes
+Version 1.6
+- Added support for Tiled Materials
+Version 1.51
+- Changed package name from ProDrawCall to Pro Draw Call.
+Version 1.5
+- Added support for multiple materials on game objects.
+- Fixed reversed indexor that was conflicting with combining materials.
+Version 1.0
